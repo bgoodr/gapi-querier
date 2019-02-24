@@ -3,6 +3,7 @@ import apiGooglePhotos from '../helpers/google-photos.js';
 const _mediaItems = {};
 
 function storeMediaItems(mediaItems) {
+	console.log('storeMediaItems : mediaItems', mediaItems); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
 	for (const mi of mediaItems) {
 		_mediaItems[mi.id] = mi.productUrl;
 	}
@@ -14,7 +15,7 @@ function forgetMediaItems(mediaItems) {
 }
 
 async function requestPagedRecursively(method, path, body, processResults, pageToken) {
-	console.log('requestPagedRecursively : method', method, 'path', path, 'pageToken', pageToken); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
+	console.log('requestPagedRecursively : method', method, 'path', path); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
 	pageToken = pageToken || '';
 
 	let url = path;
