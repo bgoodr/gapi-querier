@@ -14,7 +14,7 @@ function forgetMediaItems(mediaItems) {
 }
 
 async function requestPagedRecursively(method, path, body, processResults, pageToken) {
-	console.log('requestPagedRecursively : called '); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
+	console.log('requestPagedRecursively : method', method); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
 	pageToken = pageToken || '';
 
 	let url = path;
