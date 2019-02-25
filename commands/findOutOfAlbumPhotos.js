@@ -19,6 +19,10 @@ function storeMediaItems(mediaItems) {
 	}
 }
 function forgetMediaItems(mediaItems) {
+	if (!mediaItems) {
+		console.log('forgetMediaItems : !mediaItems so returning'); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
+		return;
+	}
 	for (const mi of mediaItems) {
 		delete _mediaItems[mi.id];
 	}
