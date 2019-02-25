@@ -4,6 +4,10 @@ const _mediaItems = {};
 
 function storeMediaItems(mediaItems) {
 	if (!mediaItems) {
+		console.log('storeMediaItems : !mediaItems so returning'); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
+		return;
+	}
+	if (!mediaItems) {
 		console.log('storeMediaItems : !mediaItems'); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
 	} else if (typeof mediaItems == 'undefined') {
 		console.log('storeMediaItems : typeof mediaItems is undefined'); // 1681b41d-7207-4049-81f2-98dc0b99f9f8 debug code to be deleted later
